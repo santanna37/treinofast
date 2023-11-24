@@ -3,7 +3,7 @@ repos:
     hooks:
     -   id: requirements
         name: requirements
-        entry: powershell -Command "& .\venv\Scripts\Activate ; pip freeze > requirements.txt ; git add requirements.txt"
+        entry: bash -c " .\venv\Scripts\Activate ; pip freeze > requirements.txt ; git add requirements.txt"
         language: system
         pass_filenames: false
         stages: [commit]

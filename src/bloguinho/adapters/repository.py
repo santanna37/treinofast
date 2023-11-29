@@ -16,7 +16,7 @@ class RepositorioUser():
     def __init__(self, session:Session):
         self.session = session
 
-    def criar_user_repositorio(self, user:UserSchema.User):
+    def criar_user_repositorio(self, user:UserSchema):
         db_user = UserModel(
             id = user.id,
             nome = user.nome,
